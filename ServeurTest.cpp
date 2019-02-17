@@ -128,7 +128,7 @@ void main()
 					l_i = 0;
 				}
 
-				if ((strcmp(buf1, "first") == 0) && (EnCours == false) && (l_i >= 2))
+				if ((strcmp(buf1, "first") == 0)) // && (EnCours == false) && (l_i >= 2))
 				{
 					char buf2[4096];
 					int l_tirage = l_partie.tirage();
@@ -148,7 +148,7 @@ void main()
 
 
 
-				if ((buf1[0] == 's'))
+				if ((buf1[0] == 's') && (buf[1] == 'c'))
 				{
 					if (l_partie.EstCordonneValide((int)buf1[2], (int)buf1[2] == true))
 					{
